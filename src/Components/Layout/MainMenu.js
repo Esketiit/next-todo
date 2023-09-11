@@ -1,10 +1,11 @@
 import {Link} from "react-router-dom"
+import classes from './MainMenu.module.css'
 
 function MainMenu () {
 
   return (
-    <header>
-      <div>Main Menu</div>
+    <header className={classes.header}>
+      <div className={classes.logo}>Main Menu</div>
       <nav>
         <ul>
           <li><Link to="/newmeetup">Create New Meet Up</Link></li>
